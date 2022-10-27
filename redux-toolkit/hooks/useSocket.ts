@@ -11,7 +11,7 @@ export const useSocket = () => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    const API_URL = "ws://192.168.1.128:1402";
+    const API_URL = "";
     const socket = io(API_URL);
     socket.on("connect", () => {
       const processId = localStorage.getItem("processId");
